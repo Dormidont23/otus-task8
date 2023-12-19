@@ -23,7 +23,13 @@
   centos9s   1   2   0 wz--n- <127.00g    0\
 Переименуем VG:\
 [root@otus-task8 ~]# **vgrename centos9s NewNameVG**\
-  Volume group "centos9s" successfully renamed to "NewNameVG"
+  Volume group "centos9s" successfully renamed to "NewNameVG"\
+Далее правим /etc/fstab, /etc/default/grub, /boot/grub2/grub.cfg. Везде заменяем старое название на новое.\
+[root@otus-task8 ~]# **dracut -f -v /boot/initramfs-$(uname -r).img $(uname -r)**\
+...\
+dracut: *** Creating image file '/boot/initramfs-5.14.0-366.el9.x86_64.img' ***\
+dracut: dracut: using auto-determined compression method 'pigz'\
+dracut: *** Creating initramfs image file '/boot/initramfs-5.14.0-366.el9.x86_64.img' done ***\
 
 ### Добавить модуль в initrd ###
 
