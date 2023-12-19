@@ -31,4 +31,5 @@
   VG        #PV #LV #SN Attr   VSize    VFree\
   NewNameVG   1   2   0 wz--n- <127.00g    0
 ### Добавить модуль в initrd ###
-Скрипты модулей хранятся в каталоге /usr/lib/dracut/modules.d/. Для того, чтобы добавить свой модуль, создаем там каталог с именем 01test:
+Скрипты модулей хранятся в каталоге /usr/lib/dracut/modules.d/. Для того, чтобы добавить свой модуль, создаем там каталог с именем 01test:\
+[root@otus-task8 modules.d]# **mkdir /usr/lib/dracut/modules.d/01test**\\
