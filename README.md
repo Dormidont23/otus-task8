@@ -42,4 +42,4 @@ dracut: *** Creating initramfs image file '/boot/initramfs-5.14.0-366.el9.x86_64
 Проверяем, что наш модуль загружен в образ:\
 [root@otus-task8 modules.d]# **lsinitrd -m /boot/initramfs-$(uname -r).img | grep test**\
 test\
-
+Перезагружаемся и руками выключаем опции rghb и quiet и проверяем вывод:\
