@@ -18,6 +18,9 @@
 Файловая система монтируется сразу в режиме **rw**.\
 ![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/06.png)
 ### Установить систему с LVM, после чего переименовать VG ###
+Предварительно необходимо подправить файл **/etc/lvm/lvm.conf**. В этом файле необходимо раскомментировать строку **# use_devicesfile = 1**, поменять **1** на **0** и перезагрузиться, иначе команда **vgs** показывает фигу:\
+[root@otus-task8 ~]# **vgs**\
+  Devices file sys_wwid t10.ATA_VBOX_HARDDISK_VBd5f4dd3a-62461130 PVID 2BK4m9PFz2eWUx5ZqAT2nxQwzXdOfdxI last seen on /dev/sda2 not found.\
 Посмотрим текущее состояние системы:\
 [root@otus-task8 ~]# **vgs**\
   VG       #PV #LV #SN Attr   VSize    VFree\
