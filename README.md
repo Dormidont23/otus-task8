@@ -32,4 +32,11 @@
   NewNameVG   1   2   0 wz--n- <127.00g    0
 ### Добавить модуль в initrd ###
 Скрипты модулей хранятся в каталоге /usr/lib/dracut/modules.d/. Для того, чтобы добавить свой модуль, создаем там каталог с именем 01test:\
-[root@otus-task8 modules.d]# **mkdir /usr/lib/dracut/modules.d/01test**\\
+[root@otus-task8 modules.d]# **mkdir /usr/lib/dracut/modules.d/01test**\
+Создаём два файла: \
+[root@otus-task8 modules.d]# **dracut -f -v**\
+...\
+dracut: *** Creating image file '/boot/initramfs-5.14.0-366.el9.x86_64.img' ***\
+dracut: dracut: using auto-determined compression method 'pigz'\
+dracut: *** Creating initramfs image file '/boot/initramfs-5.14.0-366.el9.x86_64.img' done ***\
+
