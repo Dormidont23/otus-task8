@@ -35,8 +35,9 @@
 [root@otus-task8 modules.d]# **mkdir /usr/lib/dracut/modules.d/01test**\
 Создаём два скрипта:\
 - **module-setup.sh** - устанавливает модуль и вызывает скрипт **test.sh**.
-- **test.sh** - собственно сам вызываемый скрипт, в нём и рисуется пингвинчик.\
-Скрипты здесь https://github.com/Dormidont23/otus-task8/tree/master/scripts\
+- **test.sh** - собственно сам вызываемый скрипт, в нём и рисуется пингвинчик.
+
+Скрипты здесь https://github.com/Dormidont23/otus-task8/tree/master/scripts
 [root@otus-task8 modules.d]# **dracut -f -v**\
 ...\
 dracut: *** Creating image file '/boot/initramfs-5.14.0-366.el9.x86_64.img' ***\
