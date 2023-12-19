@@ -25,10 +25,9 @@
 [root@otus-task8 ~]# **vgrename centos9s NewNameVG**\
   Volume group "centos9s" successfully renamed to "NewNameVG"\
 Далее правим **/etc/fstab**, **/etc/default/grub**. Везде заменяем старое название на новое. Перезагружаемся. Перед загрузкой ОС выбираем первую строку, жмём **e** и правим загрузочную запись, указывая вместо **centos9s** - **NewNameVG**. Жмём **ctrl+x** для загрузки.\
-Далее создаём grub.cfg: **grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg**\
+Далее создаём grub.cfg: **grub2-mkconfig -o /boot/efi/EFI/centos/grub.cfg**\
 Перезагружаемся и проверяем:\
 [root@otus-task8 ~]# **vgs**\
   VG        #PV #LV #SN Attr   VSize    VFree\
   NewNameVG   1   2   0 wz--n- <127.00g    0
 ### Добавить модуль в initrd ###
-
