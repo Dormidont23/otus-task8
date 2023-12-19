@@ -13,6 +13,9 @@
 Попадаем в emergency mode. Перемонтируем файловую систему на запись, меняем пароль рута.\
 ![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/04.png)
 3. В строке, начинающейся с **linux**, заменяем **ro** на **rw init=/sysroot/bin/sh** и нажимаем **сtrl-x** для загрузки в систему.\
+![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/05.png)\
+Файловая система монтируется сразу в режиме **rw**.\
+![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/06.png)
 ### Установить систему с LVM, после чего переименовать VG ###
 
 ### Добавить модуль в initrd ###
