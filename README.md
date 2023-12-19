@@ -17,6 +17,13 @@
 Файловая система монтируется сразу в режиме **rw**.\
 ![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/06.png)
 ### Установить систему с LVM, после чего переименовать VG ###
+Посмотрим текущее состояние системы:\
+[root@otus-task8 ~]# **vgs**\
+  VG       #PV #LV #SN Attr   VSize    VFree\
+  centos9s   1   2   0 wz--n- <127.00g    0\
+Переименуем VG:\
+[root@otus-task8 ~]# **vgrename centos9s NewNameVG**\
+  Volume group "centos9s" successfully renamed to "NewNameVG"
 
 ### Добавить модуль в initrd ###
 
