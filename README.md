@@ -33,7 +33,10 @@
 ### Добавить модуль в initrd ###
 Скрипты модулей хранятся в каталоге /usr/lib/dracut/modules.d/. Для того, чтобы добавить свой модуль, создаем там каталог с именем 01test:\
 [root@otus-task8 modules.d]# **mkdir /usr/lib/dracut/modules.d/01test**\
-Создаём два файла: \
+Создаём два скрипта:\
+- **module-setup.sh** - устанавливает модуль и вызывает скрипт **test.sh**.
+- **test.sh** - собственно сам вызываемый скрипт, в нём и рисуется пингвинчик.
+Скрипты здесь \
 [root@otus-task8 modules.d]# **dracut -f -v**\
 ...\
 dracut: *** Creating image file '/boot/initramfs-5.14.0-366.el9.x86_64.img' ***\
