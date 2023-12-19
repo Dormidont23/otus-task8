@@ -43,3 +43,4 @@ dracut: *** Creating initramfs image file '/boot/initramfs-5.14.0-366.el9.x86_64
 [root@otus-task8 modules.d]# **lsinitrd -m /boot/initramfs-$(uname -r).img | grep test**\
 test\
 Перезагружаемся и руками выключаем опции rghb и quiet и проверяем вывод:\
+![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/07.png)
