@@ -39,4 +39,7 @@
 dracut: *** Creating image file '/boot/initramfs-5.14.0-366.el9.x86_64.img' ***\
 dracut: dracut: using auto-determined compression method 'pigz'\
 dracut: *** Creating initramfs image file '/boot/initramfs-5.14.0-366.el9.x86_64.img' done ***\
+Проверяем, что наш модуль загружен в образ:\
+[root@otus-task8 modules.d]# **lsinitrd -m /boot/initramfs-$(uname -r).img | grep test**\
+test\
 
