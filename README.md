@@ -5,6 +5,7 @@
 
 ### Попасть в систему без пароля несколькими способами ###
 1. В конце строки начинающейся с **linux** добавляем **init=/bin/bash** и нажимаем **сtrl-x** для загрузки в систему.
+![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/01.png)
 ![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/02.png)
 Смотрим, что корневая файловая система смотирована в режиме _только чтение_. Выполняем **mount -o remount,rw /** и смотрим ещё раз.
 3.
