@@ -3,6 +3,7 @@
 - Установить систему с LVM, после чего переименовать VG.
 - Добавить модуль в initrd.
 
+Используется box **centos9s**, поэтому некотрые действия отличаются от тех, что в методичке.
 ### Попасть в систему без пароля несколькими способами ###
 1. В конце строки, начинающейся с **linux**, добавляем **init=/bin/bash** и нажимаем **сtrl-x** для загрузки в систему.\
 ![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/01.png)\
@@ -37,7 +38,8 @@
 - **module-setup.sh** - устанавливает модуль и вызывает скрипт **test.sh**.
 - **test.sh** - собственно сам вызываемый скрипт, в нём и рисуется пингвинчик.
 
-Скрипты здесь https://github.com/Dormidont23/otus-task8/tree/master/scripts \
+Скрипты здесь https://github.com/Dormidont23/otus-task8/tree/master/scripts
+
 [root@otus-task8 modules.d]# **dracut -f -v**\
 ...\
 dracut: *** Creating image file '/boot/initramfs-5.14.0-366.el9.x86_64.img' ***\
