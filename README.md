@@ -10,6 +10,8 @@
 ![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/02.png)
 2. В конце строки, начинающейся с **linux**, добавляем **rd.break** и нажимаем **сtrl-x** для загрузки в систему.\
 ![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/03.png)\
+Попадаем в emergency mode. Перемонтируем файловую систему на запись, меняем пароль рута.\
+![alt text](https://github.com/Dormidont23/otus-task8/blob/master/screenshots/04.png)
 ### Установить систему с LVM, после чего переименовать VG ###
 
 ### Добавить модуль в initrd ###
